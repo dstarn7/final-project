@@ -10,6 +10,9 @@
 </head>
 <body>
     <div class="wrapper">
+        
+<!-----------------------------Start of header----------------------------->
+
         <header>
             <div class="logo"> <a href="/index.html"><img src="/img/tech_club_logo.JPG" alt="Tech Club Logo"></a></div>
             <nav>
@@ -19,32 +22,137 @@
                 </ul>
             </nav>
         </header>
-        
-        <div class="page_title">
-            <div class="website_title"> <h1> Chowchilla High School Tech Club </h1></div>
-        </div>
+<!-----------------------------End of header----------------------------->
+       
+<!-----------------------------Start of section ----------------------------->
 
         <section>
+            <article>
+                <h2>About the Club</h2> 
+                <p> The CUHS Tech Club was established in 2013 for students interested in technology. 
+                    All students are encouraged to participate in the various club activities. <br><br>
+                    The club holds monthly meetings on the 3rd or 4th Tuesday of the month at lunch.
+                    Game nights are held quarterly for all CUHS students to stay after school and play
+                    video games, board games and hang out with friends. <br><br>
+                    Tech club members participate in fundraisers throughout the year ranging from selling
+                    snow cones and hot chocolate at the football games to selling healthy snacks at school. 
+                    These funds are used to pay for annual trip to a college campus in the spring. <br><br>
+                    Other trips we take during the year include a tour of Bitwise Industries in Fresno in 
+                    November and the annual Hour of Code outreach at Fairmead
+                    and Dairyland schools each December. 
+                </p>
+            </article>
 
+            <article>
+                <h2 id="table_header">Leadership Team</h2> 
+                <table>
+                    <tr>
+                      <td><strong>President </strong><br>
+                          Geovani Vera
+                      </td>
+                      <td><strong>Secretary </strong> <br>
+                          Emily Puente
+                      </td> 
+                      <td><strong>Treasurer</strong> <br>
+                            Mayvelene Dimapasoc
+                      </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>Public Relations </strong><br>
+                            Yahir Badillo
+                        </td>
+                        <td><strong>Leadership </strong> <br>
+                            Paige Coelho
+                        </td> 
+                        <td><strong>Leadership</strong> <br>
+                            Graciela Gastelum
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><strong>Leadership</strong><br>
+                            Savannah Leon
+                        </td>
+                        <td><strong>Leadership</strong> <br>
+                            Ria Patel
+                        </td> 
+                        <td><strong>Leadership</strong> <br>
+                            Saachi Patel
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td><strong> </strong><br>
+                            
+                        </td>
+                        <td><strong> Advisor </strong> <br>
+                            Diana Starn
+                        </td> 
+                        <td><strong> </strong> <br>
+                            
+                        </td>
+                     </tr>
+                  </table>
+            </article>
         </section>
         
-        <section>
+        <section class="picture_gallery">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
 
+<!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="/img/game_night-2.jpg" style="width:100%">
+                <div class="text">Game Night</div>
+            </div>
+  
+            <div class="mySlides fade">
+                <img src="/img/hour_of_code_group-2a.jpg" style="width:100%">
+                <div class="text">Hour of Code</div>
+            </div>
+  
+            <div class="mySlides fade">
+                <img src="/img/officer_team-2.jpeg" style="width:100%">
+                <div class="text">Officer Retreat</div>
+            </div>
         </section>
+<!-----------------------------End of header----------------------------->
 
-        <section>
+<!-----------------------------Start of footer----------------------------->
 
-        </section>
-        
-        <section>
-
-        </section>
-        
         <footer>
+            
+            <div class="footer-text">
+                <p>&#169; Copyright 2021 CUHS Tech Club</p>
+            </div>
+
+            <div class="footer-icons">
+                <a href="#"> <img src="/img/instagram.png" alt="Instagram logo"> </a>
+                <a href="#"> <img src="/img/snapchat.png" alt="Snapchat logo"> </a>
+                <a href="#"> <img src="/img/google_classroom.png" alt="Google Classroom logo"> </a>
+            </div>
 
         </footer>
-
+<!-----------------------------End of footer----------------------------->
 
     </div>
+
 </body>
 </html>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
